@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOZOCO Eyewear</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3 sticky-top">
+        <div class="container-fluid px-lg-5">
+ 
+            <!-- Links esquerda (desktop) -->
+            <div class="navbar-nav d-none d-lg-flex flex-row gap-4">
+                <a class="nav-link" href="#">VER TODOS</a>
+                <a class="nav-link" href="#">BEST SELLERS</a>
+                <a class="nav-link" href="#">RASTREIO</a>
+                <a class="nav-link" href="#">CLIENTES</a>
+            </div>
+ 
+            <!-- Botão hambúrguer (mobile) -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+ 
+            <!-- Logo centralizado -->
+            <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
+                <img src="img/img1.png" alt="FOZOCO" height="30">
+            </a>
+ 
+            <!-- Ícones direita -->
+            <div class="d-flex gap-4 fs-5 ms-auto">
+                <a href="#" class="text-dark nav-icon"><i class="bi bi-person"></i></a>
+                <a href="#" class="text-dark nav-icon"><i class="bi bi-search"></i></a>
+                <a href="#" class="text-dark nav-icon position-relative">
+                    <i class="bi bi-cart3"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+ 
+        <!-- Menu Mobile -->
+        <div class="collapse navbar-collapse" id="mobileMenu">
+            <div class="container py-3 d-lg-none">
+                <a class="nav-link py-2 border-bottom" href="#">VER TODOS</a>
+                <a class="nav-link py-2 border-bottom" href="#">BEST SELLERS</a>
+                <a class="nav-link py-2 border-bottom" href="#">RASTREIO</a>
+                <a class="nav-link py-2" href="#">CLIENTES</a>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- ===== HERO CAROUSEL ===== -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+ 
+        <!-- Indicadores (bolinhas) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+        </div>
+ 
+        <div class="carousel-inner">
+ 
+            <!-- Slide 1 — Axel Limited Edition (similar à foto enviada) -->
+            <div class="carousel-item active hero-slide slide-1">
+                <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="slide-content">
+                        <p class="slide-eyebrow">NEW ARRIVAL</p>
+                        <h1 class="slide-title">AXEL</h1>
+                        <h2 class="slide-subtitle">LIMITED EDITION</h2>
+                        <div class="slide-pill">2 NOVAS CORES. DISPONÍVEL AGORA</div>
+                        <a href="#" class="btn btn-hero mt-4">COMPRE JÁ →</a>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Slide 2 — Óculos de grau -->
+            <div class="carousel-item hero-slide slide-2">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="col-lg-6 slide-content text-white">
+                        <p class="slide-eyebrow">ANTI LUZ AZUL</p>
+                        <h1 class="slide-title-left">óculos de grau<br>sem sair de casa</h1>
+                        <div class="d-flex flex-column mt-4">
+                            <div class="hero-badge"><span>1</span> escolha seu favorito</div>
+                            <div class="hero-badge"><span>2</span> adicione as lentes</div>
+                            <div class="hero-badge"><span>3</span> envie a receita</div>
+                        </div>
+                        <a href="#" class="btn btn-hero-outline mt-4">VER COLEÇÃO →</a>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Slide 3 — Óculos de sol -->
+            <div class="carousel-item hero-slide slide-3">
+                <div class="container h-100 d-flex align-items-center justify-content-end">
+                    <div class="col-lg-5 slide-content text-white text-end">
+                        <p class="slide-eyebrow">VERÃO 2025</p>
+                        <h1 class="slide-title-right">coleção<br>de sol</h1>
+                        <p class="slide-desc mt-3">Proteção UV400 com estilo para todos os momentos.</p>
+                        <a href="#" class="btn btn-hero mt-3">VER COLEÇÃO →</a>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Slide 4 — Clip-On 2 em 1 -->
+            <div class="carousel-item hero-slide slide-4">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="col-lg-6 slide-content text-white">
+                        <p class="slide-eyebrow">INOVAÇÃO</p>
+                        <h1 class="slide-title-left">2 em 1<br>clip-on</h1>
+                        <p class="slide-desc mt-3">Um óculos, duas funções. Do dia para a noite em segundos.</p>
+                        <a href="#" class="btn btn-hero-outline mt-4">SAIBA MAIS →</a>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Slide 5 — Esportivo -->
+            <div class="carousel-item hero-slide slide-5">
+                <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="slide-content text-white">
+                        <p class="slide-eyebrow">LINHA SPORT</p>
+                        <h1 class="slide-title">ESPORTIVOS</h1>
+                        <p class="slide-desc mt-3">Para quem não para. Alta performance, design arrojado.</p>
+                        <a href="#" class="btn btn-hero mt-4">COMPRE JÁ →</a>
+                    </div>
+                </div>
+            </div>
+ 
+        </div><!-- /.carousel-inner -->
+ 
+        <!-- Controles prev/next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+ 
+    </div><!-- /#heroCarousel -->
+ 
+    <!-- INFO BAR -->
+    <div class="info-bar text-center">
+        <div class="container d-flex justify-content-around flex-wrap gap-2">
+            <span>✓ FRETE EXPRESSO</span>
+            <span>✓ 100.000+ CLIENTES SATISFEITOS</span>
+            <span>✓ ATÉ 3X SEM JUROS</span>
+        </div>
+    </div>
+ 
+    <!-- FILTROS -->
+    <div class="container py-5 text-center">
+        <h6 class="text-muted mb-3 small fw-bold letter-spacing-wide">FILTRAR POR</h6>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+            <a href="#" class="filter-btn active">ÓCULOS ANTI LUZ AZUL</a>
+            <a href="#" class="filter-btn">ÓCULOS DE SOL</a>
+            <a href="#" class="filter-btn">ÓCULOS 2 EM 1 CLIP-ON</a>
+            <a href="#" class="filter-btn">ÓCULOS ESPORTIVOS</a>
+        </div>
+    </div>
+ 
+    <!-- VITRINE -->
+    <div class="container mb-5">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+            <!-- Produto 1 -->
+            <div class="col product-card">
+                <div class="product-img-container">
+                    <span class="discount-tag">- 26%</span>
+                    <img src="img/img3.png" class="img-fluid" alt="La Paz">
+                    <div class="product-overlay"><a href="#" class="btn-quick-view">Ver produto</a></div>
+                </div>
+                <div class="product-title">Óculos La Paz - Anti Luz Azul</div>
+                <div><span class="price-new">R$ 219,90</span><span class="price-old">R$ 299,99</span></div>
+                <div class="installments">3x de R$ 73,30 sem juros</div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="col product-card">
+                <div class="product-img-container">
+                    <img src="img/img4.jpg" class="img-fluid" alt="Quito">
+                    <div class="product-overlay"><a href="#" class="btn-quick-view">Ver produto</a></div>
+                </div>
+                <div class="product-title">Óculos Quito - Anti Luz Azul</div>
+                <div><span class="price-new">R$ 219,90</span></div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="col product-card">
+                <div class="product-img-container">
+                    <img src="img/img5.jpg" class="img-fluid" alt="Aros">
+                    <div class="product-overlay"><a href="#" class="btn-quick-view">Ver produto</a></div>
+                </div>
+                <div class="product-title">Óculos Aros - Anti Luz Azul</div>
+                <div><span class="price-new">R$ 219,90</span></div>
+            </div>
+            <!-- Produto 4 -->
+            <div class="col product-card">
+                <div class="product-img-container">
+                    <img src="img/img6.jpg" class="img-fluid" alt="Oslo">
+                    <div class="product-overlay"><a href="#" class="btn-quick-view">Ver produto</a></div>
+                </div>
+                <div class="product-title">Óculos Oslo - Anti Luz Azul</div>
+                <div><span class="price-new">R$ 219,90</span></div>
+            </div>
+            <!-- Produto 5 -->
+            <div class="col product-card">
+                <div class="product-img-container">
+                    <img src="img/img7.jpg" class="img-fluid" alt="Soria">
+                    <div class="product-overlay"><a href="#" class="btn-quick-view">Ver produto</a></div>
+                </div>
+                <div class="product-title">Óculos Soria - Anti Luz Azul</div>
+                <div><span class="price-new">R$ 219,90</span></div>
+            </div>
+        </div>
+ 
+        <!-- Botão ver todos -->
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-outline-dark px-5 py-2 rounded-pill fw-bold small">VER TODOS OS PRODUTOS</a>
+        </div>
+    </div>
+ 
+    <!-- CATEGORIAS -->
+    <div class="container py-5">
+        <h2 class="fw-bold mb-4 fs-4">NOSSAS CATEGORIAS</h2>
+        <div class="row g-3">
+            <div class="col-md-3 col-6">
+                <a href="#" class="cat-card" style="background-image: url('img/img8.jpg');">
+                    <h3>Anti Luz Azul</h3>
+                    <span class="btn-buy">COMPRE JÁ →</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-6">
+                <a href="#" class="cat-card" style="background-image: url('img/img9.jpg');">
+                    <h3>Sol</h3>
+                    <span class="btn-buy">COMPRE JÁ →</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-6">
+                <a href="#" class="cat-card" style="background-image: url('img/img10.jpg');">
+                    <h3>2 em 1 Clip-On</h3>
+                    <span class="btn-buy">COMPRE JÁ →</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-6">
+                <a href="#" class="cat-card" style="background-image: url('img/img11.jpg');">
+                    <h3>Esportivo</h3>
+                    <span class="btn-buy">COMPRE JÁ →</span>
+                </a>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- CONFORTO VISUAL -->
+    <section class="comfort-section container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-md-6">
+                <img src="img/img12.jpg" class="img-fluid rounded-5 shadow-lg" alt="Conforto Visual">
+            </div>
+            <div class="col-md-6 ps-lg-5">
+                <span class="badge bg-teal-light text-teal mb-3">FOZOCO TECH</span>
+                <h2 class="fw-bold fs-1 mb-4">CONFORTO VISUAL, ESTILO E PRODUTIVIDADE</h2>
+                <p class="text-muted mb-4">Os óculos Fozoco foram feitos pra quem vive conectado. Tecnologia de ponta em lentes que bloqueiam a luz azul prejudicial.</p>
+                <div class="d-flex flex-column gap-3">
+                    <div class="comfort-item">
+                        <div class="comfort-icon"><i class="bi bi-display"></i></div>
+                        <div>
+                            <strong>Mais conforto para telas</strong>
+                            <p class="text-muted small mb-0">Filtragem de luz azul de alta eficiência</p>
+                        </div>
+                    </div>
+                    <div class="comfort-item">
+                        <div class="comfort-icon"><i class="bi bi-eye"></i></div>
+                        <div>
+                            <strong>Menos cansaço nos olhos</strong>
+                            <p class="text-muted small mb-0">Reduz fadiga ocular em até 60%</p>
+                        </div>
+                    </div>
+                    <div class="comfort-item">
+                        <div class="comfort-icon"><i class="bi bi-moon-stars"></i></div>
+                        <div>
+                            <strong>Melhora o sono</strong>
+                            <p class="text-muted small mb-0">Regula a produção de melatonina</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-teal mt-4 px-4 py-2 rounded-pill">SAIBA MAIS</a>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <h5 class="fw-bold mb-4 text-center">O QUE NOSSOS CLIENTES DIZEM</h5>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">★★★★★</div>
+                        <p class="mb-3">"Produto incrível! Meu cansaço nos olhos diminuiu muito depois que comecei a usar."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="testimonial-avatar">MR</div>
+                            <div><strong class="d-block small">Marina R.</strong><span class="text-muted" style="font-size:11px">São Paulo, SP</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">★★★★★</div>
+                        <p class="mb-3">"Entrega super rápida e o óculos é lindo! Recomendo demais para quem passa horas na frente do computador."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="testimonial-avatar">JS</div>
+                            <div><strong class="d-block small">João S.</strong><span class="text-muted" style="font-size:11px">Curitiba, PR</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">★★★★★</div>
+                        <p class="mb-3">"Comprei o clip-on e amei! É perfeito para usar durante o dia e converter para sol rapidinho."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="testimonial-avatar">CA</div>
+                            <div><strong class="d-block small">Camila A.</strong><span class="text-muted" style="font-size:11px">Rio de Janeiro, RJ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- INSTAGRAM -->
+    <div class="container py-5">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h5 class="fw-bold mb-0">Siga-nos no Instagram!</h5>
+            <a href="https://instagram.com/fozoco" target="_blank" class="text-decoration-none fw-bold small text-teal">
+                <i class="bi bi-instagram me-1"></i>@fozoco
+            </a>
+        </div>
+        <div class="row row-cols-4 row-cols-lg-8 g-2">
+            <div class="col"><a href="#" class="insta-link"><img src="img/img13.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+            <div class="col"><a href="#" class="insta-link"><img src="img/img14.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+            <div class="col"><a href="#" class="insta-link"><img src="img/img15.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+            <div class="col"><a href="#" class="insta-link"><img src="img/img16.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+            <div class="col"><a href="#" class="insta-link"><img src="img/img17.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+            <div class="col"><a href="#" class="insta-link"><img src="img/img18.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+            <div class="col"><a href="#" class="insta-link"><img src="img/img19.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+            <div class="col"><a href="#" class="insta-link"><img src="img/img20.png" class="insta-img"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></a></div>
+        </div>
+    </div>
+ 
+    <!-- FOOTER -->
+    <footer class="footer-main mt-5">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-md-8 p-5 text-white">
+                    <div class="mb-4">
+                        <img src="img/img1.png" alt="FOZOCO" height="28" style="filter: brightness(0) invert(1); opacity:.8">
+                    </div>
+                    <p class="text-white-50 small mb-5" style="max-width:400px">Óculos com tecnologia de ponta para quem vive conectado. Conforto, estilo e proteção em cada detalhe.</p>
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <h6 class="fw-bold mb-4 small letter-spacing-wide">NOSSA EMPRESA</h6>
+                            <a href="#" class="footer-link">Grupo VIP</a>
+                            <a href="#" class="footer-link">Como comprar?</a>
+                            <a href="#" class="footer-link">Contato</a>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <h6 class="fw-bold mb-4 small letter-spacing-wide">INFORMAÇÕES</h6>
+                            <a href="#" class="footer-link">Rastreamento</a>
+                            <a href="#" class="footer-link">Privacidade</a>
+                            <a href="#" class="footer-link">Trocas e Devoluções</a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-orange-box text-white d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-4 fs-4">Central de Atendimento</h2>
+                    <p class="fs-5 fw-bold mb-1"><i class="bi bi-whatsapp me-2"></i>+55 43 99168-8285</p>
+                    <p class="mb-4"><i class="bi bi-envelope me-2"></i>info@fozoco.com</p>
+                    <p class="small opacity-75 mb-1">Seg–Sex: 9h às 18h</p>
+                    <a href="#" class="btn btn-light text-dark fw-bold rounded-pill px-4 mt-3 align-self-start small">FALE CONOSCO</a>
+                </div>
+            </div>
+            <div class="footer-bottom text-center text-white-50 py-3 small border-top border-white border-opacity-10">
+                © 2025 FOZOCO Eyewear. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    <script>
+        // Filtros - toggle active
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
